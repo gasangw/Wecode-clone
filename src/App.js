@@ -30,6 +30,7 @@ class App extends Component {
       <div className='container'>
         <h1 className='title'>Search for someone</h1>
         <input type='text' onChange={(e) => this.setState({filterData: e.target.value.toLocaleLowerCase()}) } placeholder='what are you searching for' />
+        <div className='content'>
         {
           this.state.users.filter((value) => {
             return value.name.toLowerCase().includes(this.state.filterData)
@@ -44,6 +45,7 @@ class App extends Component {
             )
           })
         }
+        </div>
       </div>
     )
   }

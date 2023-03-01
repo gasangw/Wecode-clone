@@ -9,7 +9,12 @@
  background-color: #008080; 
  border-radius: 10px;
  margin: 0 auto;
- width: 70%;
+ width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -26,7 +31,7 @@ input {
 }
 
 .data {
-  width: 50%;
+  width: 18%;
   padding: 0.5rem;
   color: #fff;
   margin: 0 auto;
@@ -34,4 +39,9 @@ input {
 
 span {
   color: pink;
+  font-size: 10px;
+}
+
+.data h3 {
+  font-size: 17px;
 }
