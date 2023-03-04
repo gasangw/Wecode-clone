@@ -1,55 +1,31 @@
-import './App.css';
-import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { Component } from 'react'
+import Navbar from './components/Navbar'
+import HomePage from './components/HomePage'
+import WeCode from './components/WeCode'
+import Program from './components/Program'
+import Apply from './components/Apply'
+import Footer from './components/Footer'
+import MyLogo from './components/MyLogo'
+import { Routes, Route } from 'react-router-dom'
 
 class App extends Component {
-  constructor(){
-    super()
-
-    this.state = {
-      users:  [],
-      isloading: true,
-      filterData: '',
-
-    }
-    // console.log(typeof(this.state.filterData))
-  }
-    componentDidMount() {
-      fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then(nameList => {
-        console.log(nameList)
-          this.setState({ users: nameList, isloading: false });
-      })
-    }
   render() {
-    if(this.state.isloading){
-        return <h1>Loading...</h1>
-    }
     return (
-      <div className='container'>
-        <h1 className='title'>Search for someone</h1>
-        <input type='text' onChange={(e) => this.setState({filterData: e.target.value.toLocaleLowerCase()}) } placeholder='what are you searching for' />
-        <div className='content'>
-        {
-          this.state.users.filter((value) => {
-            return value.name.toLowerCase().includes(this.state.filterData)
-          }).map((data) => {
-            return (
-              <div key={data.id} className='data'>
-               <div className='card bg-dark'>
-                  <h3><span>Name:</span> {data.name}</h3>
-                  <p><span>Email:</span> {data.email}</p>
-               </div>
-              </div>
-            )
-          })
-        }
-        </div>
+      <div>
+      <Navbar />
+        <Routes>
+          <Route path='/home' element={<HomePage />} />  
+          <Route path='/wecode' element={<WeCode />} /> 
+          <Route path='/program' element={<Program />} /> 
+          <Route path='/apply' element={<Apply />} />   
+        </Routes>
+          <WeCode />
+          <MyLogo />
+          <Program />
+          <Apply />
+          <Footer />
       </div>
     )
   }
 }
-
-export default App;
-
+export default App

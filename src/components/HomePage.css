@@ -1,0 +1,26 @@
+.cont {
+  background-image: url(./imgs/wallpapa.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.para {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 0.6rem 4rem;
+    font-weight: 700;
+}
+
+.paragra {
+   background: linear-gradient(45deg, #cfbfbf, #e7d4d4, #b2a3a3, #c7b9b9);
+   padding: 0.6rem;
+   width: fit-content;
+}

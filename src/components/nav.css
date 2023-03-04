@@ -1,0 +1,20 @@
+.mylogo {
+    width: 18%;
+    height: 18%;
+}
+
+#responsive-navbar-nav {
+    padding: 0.6rem;
+    width: 50%;
+}
+
+.Nav-container {
+    margin-right: -1rem;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin: 0.5rem;
+}
