@@ -20,7 +20,23 @@
 }
 
 .paragra {
-   background: linear-gradient(45deg, #cfbfbf, #e7d4d4, #b2a3a3, #c7b9b9);
+   background-color: #ffffff3b;
    padding: 0.6rem;
    width: fit-content;
+}
+
+@media(max-width: 769px) {
+  .para {
+    font-size: 1rem;
+    left: 8%;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+  }
+
+  .paragra {
+    padding: 0.2rem;
+  }
 }
