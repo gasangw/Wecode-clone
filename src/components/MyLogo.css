@@ -1,0 +1,22 @@
+.logoSec {
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.img-logo{ 
+    width: 90%;
+}
+
+.logo2 {
+    width: 10%;
+    height: 15%;
+}
