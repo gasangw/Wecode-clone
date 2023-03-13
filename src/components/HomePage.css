@@ -9,7 +9,7 @@
     color: white;
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 10%;
     font-size: 1.6rem;
     font-weight: 500;
 }
@@ -22,6 +22,7 @@
 .paragra {
    background-color: rgba(255,255,255,.75);
    padding: 0.6rem;
+   color: black;
    width: fit-content;
 }
 
