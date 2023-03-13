@@ -23,11 +23,10 @@ export default class WeCode extends Component {
             <p className="power-word">POWERED BY</p>
             <div className="power">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/ZTujt2ILrVE"
                 title="YouTube video player"
                 frameborder="0"
+                className="vid"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>

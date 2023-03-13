@@ -18,3 +18,15 @@
     font-weight: 600;
     margin: 0.5rem;
 }
+
+@media(max-width: 769px){
+    .navbar > .container {
+      display: block;
+    }
+
+    .mylogo {
+        width: 30%;
+        height: 30%;
+        margin-right: 25%;
+    }
+}

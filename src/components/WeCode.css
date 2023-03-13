@@ -35,6 +35,12 @@
   margin-bottom: 1.6rem;
 }
 
+.vid {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
 .achive-year {
     font-weight: 700;
     line-height: 3.3rem;
@@ -47,5 +53,32 @@
         height: 3rem;
         border-left: 7px solid red;
     }
+
+    .about {
+        padding-top: 0.1rem;
+        font-size: 0.8rem;
+     }
+     
+    .wecode {
+        font-size: 1rem;
+    }
+
+    .power-word {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .power {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .achive-year {
+        font-weight: 500;
+        line-height: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+     
   }
   
