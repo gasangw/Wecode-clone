@@ -6,7 +6,7 @@ import ICT from './imgs/ict.png'
 export default class MyLogo extends Component {
   render() {
     return (
-      <div>
+      <div className='mypartnerss'>
         <p className='logo-title'>PARTNERS</p>
         <div className='logoSec'>
         <img src={entire} alt='group-of-logos' className='img-logo'/>
